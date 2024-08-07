@@ -1,0 +1,173 @@
+
+Name: hashes
+Prefix: hashes
+Description: generate hash for string
+
+Name: lps
+Prefix: lps
+Description: lps
+
+Name: UnionFind
+Prefix: UnionFind
+Description: UnionFind
+
+Name: primeSnip
+Prefix: primeSnip
+Description: Prime number utilities and factorization
+
+Name: math snippet
+Prefix: mathSnip
+Description: Mathematical utilities for power, modular inverse, and combinations
+
+Name: SegmentTree
+Prefix: segTreeSnip
+Description: Segment Tree with lazy propagation for range minimum queries
+
+Name: max segment tree
+Prefix: mxSegmentSnip
+Description: Segment Tree for range maximum queries
+
+Name: basic template
+Prefix: qa
+Description: Basic C++ template with common utilities and I/O functions
+
+Name: gr-inp-wt
+Prefix: gr-inp-Fwt
+Description: graph input weight
+
+Name: gr-inp
+Prefix: gr-inp
+Description: graph input
+
+Name: file_io
+Prefix: file_io
+Description: for coding competitions
+
+Name: clock
+Prefix: clock for TL
+Description: clock
+
+Name: segtree
+Prefix: Default_segtree
+Description: segtree
+
+Name: binary indexed tree
+Prefix: fenwick
+Description: binary indexed tree
+
+Name: trie
+Prefix: trie
+Description: trie
+
+Name: pbds
+Prefix: pbds
+Description: pbds
+
+Name: xor-basis
+Prefix: xor-basis
+Description: xor-basis
+
+Name: linear diophantine
+Prefix: diophantine
+Description: linear diophantine
+
+Name: crt
+Prefix: crt
+Description: crt
+
+Name: totient-seive
+Prefix: totient-seive
+Description: totient-seive
+
+Name: totient
+Prefix: totient
+Description: totient
+
+Name: log
+Prefix: log
+Description: Computes x which satisfies a^x = b mod n.
+
+Name: matrix
+Prefix: matrix
+Description: Contains a class for matrix operations, including matrix multiplication and exponentiation.
+
+Name: highest_exponent
+Prefix: highest_exponent
+Description: Computes the highest exponent of a prime p that divides n!.
+
+Name: freq-map
+Prefix: freq-map
+Description: Builds a frequency map of elements in an array.
+
+Name: two-sat (kosaraju)
+Prefix: two-sat (kosaraju)
+Description: Solves 2-SAT problems using Kosaraju’s algorithm for finding strongly connected components (SCCs) in directed graphs.
+
+Name: pq
+Prefix: pq
+Description: Shows how to use both max-priority and min-priority queues in C++.
+
+Name: binsearch
+Prefix: binsearch
+Description: Provides a binary search template for finding a value based on a condition.
+
+Name: fac
+Prefix: fac
+Description: Precomputes factorials and their modular inverses for combinatorial calculations.
+
+Name: combination
+Prefix: combination
+Description: Computes combinations using precomputed factorials and inverses.
+
+Name: combination-non-mod
+Prefix: combination-non-mod
+Description: Computes combinations using a dynamic programming approach without modular arithmetic.
+
+Name: factorization
+Prefix: factorization
+Description: Contains functions for printing all factors and prime factors of a number.
+
+Name: DSU
+Prefix: DSU
+Description: Provides a class for Union-Find data structure, useful for handling connected components.
+
+Name: kruskal
+Prefix: kruskal
+Description: Kruskal's algorithm for finding the Minimum Spanning Tree (MST) of a graph.
+
+Name: kosaraju
+Prefix: kosaraju
+Description: Kosaraju's algorithm for finding strongly connected components (SCCs) in a directed graph.
+
+Name: LCA path satisfying some condition
+Prefix: lca
+Description: Lowest Common Ancestor (LCA) with path satisfying some condition using binary lifting.
+
+Name: arr-pref
+Prefix: arr-pref
+Description: Computes prefix sums of an array.
+
+Name: modpow
+Prefix: modpow
+Description: Modular exponentiation function.
+
+Name: modular integer
+Prefix: mint
+Description: Modular integer class for arithmetic operations in modular arithmetic.
+
+Name: sieve
+Prefix: sieve
+Description: Sieve of Eratosthenes for finding prime numbers up to a given limit.
+
+Name: derangements
+Prefix: derangments
+Description: Computes the number of derangements (permutations where no element appears in its original position).
+
+Name: euclid
+Prefix: euclid
+Description: Euclidean algorithm for computing GCD and extended GCD.
+
+Name: easy_seive
+Prefix: easy_seive
+Description: Simple sieve for finding prime numbers up to a given limit.
+ 
