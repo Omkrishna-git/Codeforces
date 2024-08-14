@@ -8,9 +8,23 @@ using namespace std;
 int MOD=1e9+7;      // Hardcoded, directly change from here for functions!
 
 
-void solve(){
-    int a,b,c;
-    cin>>a>>b>>c;
+void solve() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    set<int> seat;
+    for (int i = 0; i < n; i++) {
+        if (i > 0 && seat.find(arr[i] - 1) == seat.end() && seat.find(arr[i] + 1) == seat.end()) 
+        {
+            cout << "NO" << endl;
+            return;
+        }
+        seat.insert(arr[i]);
+    }
+    cout << "YES" << endl;
 }
 
 int32_t main()
@@ -20,7 +34,7 @@ int32_t main()
  cin.tie(NULL);
 
     int T = 1;
-    //cin >> T;
+    cin >> T;
     while (T--)
     {
         solve();

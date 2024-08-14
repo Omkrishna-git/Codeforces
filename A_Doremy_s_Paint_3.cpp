@@ -1,6 +1,8 @@
 #include "bits/stdc++.h"
 using namespace std;
 #define ll long long
+#define y cout<<"YES"<<endl
+#define n cout<<"NO"<<endl
 #define all(v) v.begin(),v.end()
 #define srt(v)  sort(v.begin(),v.end())         // sort 
 #define mxe(v)  *max_element(v.begin(),v.end())     // find max element in vector
@@ -9,8 +11,8 @@ int MOD=1e9+7;      // Hardcoded, directly change from here for functions!
 
 
 void solve(){
-    int a,b,c;
-    cin>>a>>b>>c;
+    
+    
 }
 
 int32_t main()

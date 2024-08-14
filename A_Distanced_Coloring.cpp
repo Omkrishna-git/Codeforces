@@ -9,8 +9,14 @@ int MOD=1e9+7;      // Hardcoded, directly change from here for functions!
 
 
 void solve(){
-    int a,b,c;
-    cin>>a>>b>>c;
+    int n,m,k;
+    cin>>n>>m>>k;
+
+  
+        int x = (n + k - 1) / k;
+        int y = (m + k - 1) / k;
+        cout << (x * y) << endl;
+
 }
 
 int32_t main()
@@ -20,7 +26,7 @@ int32_t main()
  cin.tie(NULL);
 
     int T = 1;
-    //cin >> T;
+    cin >> T;
     while (T--)
     {
         solve();
