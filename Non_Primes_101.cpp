@@ -31,6 +31,42 @@ template<typename T, typename U> ostream &operator<<(ostream &out, const pair<T,
 template<typename T, typename U> ostream &operator<<(ostream &out, const vector<pair<T, U>> &a) { for (const auto &x : a) out << x << '\n'; return out; }
 template<typename T> ostream &operator<<(ostream &out, const vector<T> &a) { for (size_t i = 0; i < a.size(); i++) out << (i ? " " : "") << a[i]; return out; }
 
+vector<bool> Prime;
+vector<int> spf;
+
+void sieve(int s) {
+    Prime.resize(s + 1, true);
+    spf.resize(s + 1);
+    Prime[0] = Prime[1] = false;
+    for (int i = 2; i <= s; i++) {
+        spf[i] = i;
+    }
+
+    for (int i = 2; i * i <= s; i++) {
+        if (Prime[i]) {
+            for (int j = i * i; j <= s; j += i) {
+                Prime[j] = false;
+                spf[j] = min(spf[j], i);
+            }
+        }
+    }
+}
+
+bool isPrime(int n) {
+    if (n < Prime.size()) {
+        return Prime[n];
+    }
+    return false;
+}
+
+void printPrimes(int s) {
+    for (int i = 2; i <= s; i++) {
+        if (isPrime(i)) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+}
 
 vector<int> primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 
                       101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199};
