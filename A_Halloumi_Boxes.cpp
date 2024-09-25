@@ -20,15 +20,28 @@ void omkrishna(int precision) {
 }
 
 void solve(){
-    
+    int n, k;
+    cin >> n >> k;
+
+    vector<int> arr(n);
+    for (auto &i : arr) cin >> i;  
+    if (k != 1) {
+        yes;
+    } 
+    else {
+        if (is_sorted(arr.begin(), arr.end())) {
+            yes;
+        } else {
+            no;
+        }
+    }
 }
 
-int32_t main(){
-
+int32_t main() {
     omkrishna(10);
     
     int T = 1;
-    //cin >> T; 
+    cin >> T; 
     
     while (T--) {
         solve();

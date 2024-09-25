@@ -5,7 +5,7 @@ using namespace std;
 #define uint unsigned long long
 #define umap unordered_map
 #define endl '\n'
-#define no cout << "NO" << endl
+#define no cout << "No" << endl
 #define yes cout << "YES" << endl
 
 int MOD=1e9+7;
@@ -28,7 +28,7 @@ int32_t main(){
     omkrishna(10);
     
     int T = 1;
-    //cin >> T; 
+    cin >> T; 
     
     while (T--) {
         solve();
