@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 #define int long long
@@ -20,33 +20,34 @@ void omkrishna(int precision) {
 }
 
 void solve() {
-    int n;
-    cin >> n;
-
-    vector<int> arr(n);
-    for (int i = 0; i < n; ++i) cin >> arr[i];
-
-    umap<int,int>mp;
-    int f1 = 0 ;
+    int n, q;
+    cin >> n >> q;
     
-    for (int i = 0; i < n; ++i) {
-        mp[arr[i]]++;
-    }
-
-    if(mp.size() == 1){
-        yes;
-    }
-    else if(mp.size() == 2){
-        f1 = begin(mp)->second;
-        if(f1 == n/2 || f1 == (n+1)/2){
-            yes;
-            return;
+    vector<int> v(n);
+    for (auto &it : v) cin >> it;
+    
+    umap<int, int> mp;
+    
+    for (int i = 0; i < n; i++) {
+        int temp = (i + 1) * (n - i) - 1;
+        mp[temp]++;
+        
+        if (i > 0) {
+            int temp2 = (n - i) * i;
+            mp[temp2] += (v[i] - v[i - 1] - 1);
         }
-        no;
     }
-    else{
-        no;
+    
+    while (q--) {
+        int k;
+        cin >> k;
+        if (mp.find(k) == mp.end()) {
+            cout << 0 << " ";
+        } else {
+            cout << mp[k] << " ";
+        }
     }
+    cout << endl;
 }
 
 int32_t main() {
@@ -54,7 +55,7 @@ int32_t main() {
 
     int T = 1;
     cin >> T;
-
+    
     while (T--) {
         solve();
     }

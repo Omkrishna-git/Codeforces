@@ -8,7 +8,7 @@ using namespace std;
 #define no cout << "NO" << endl
 #define yes cout << "YES" << endl
 
-int MOD = 1e9 + 7;
+int MOD=1e9+7;
 
 void omkrishna(int precision) {
     ios_base::sync_with_stdio(false);
@@ -22,39 +22,23 @@ void omkrishna(int precision) {
 void solve() {
     int n;
     cin >> n;
-
-    vector<int> arr(n);
-    for (int i = 0; i < n; ++i) cin >> arr[i];
-
-    umap<int,int>mp;
-    int f1 = 0 ;
-    
-    for (int i = 0; i < n; ++i) {
-        mp[arr[i]]++;
+    vector<int> arr(n); 
+    int sum = 0;
+    for (int i = 0; i < n-1; ++i) {
+        cin >> arr[i];
+        sum += arr[i];
     }
-
-    if(mp.size() == 1){
-        yes;
-    }
-    else if(mp.size() == 2){
-        f1 = begin(mp)->second;
-        if(f1 == n/2 || f1 == (n+1)/2){
-            yes;
-            return;
-        }
-        no;
-    }
-    else{
-        no;
-    }
+    cout << -sum << endl; 
 }
 
-int32_t main() {
+
+int32_t main(){
+
     omkrishna(10);
-
+    
     int T = 1;
-    cin >> T;
-
+    cin >> T; 
+    
     while (T--) {
         solve();
     }
