@@ -20,7 +20,11 @@ void omkrishna(int precision) {
 }
 
 void solve(){
-    
+    float a , b;
+    cin>>a>>b;
+
+    cout<<a/b<<endl;
+
 }
 
 int32_t main(){

@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 #define int long long
@@ -8,7 +8,7 @@ using namespace std;
 #define no cout << "NO" << endl
 #define yes cout << "YES" << endl
 
-int MOD=1e9+7;
+int MOD = 1e9+7;
 
 void omkrishna(int precision) {
     ios_base::sync_with_stdio(false);
@@ -20,29 +20,28 @@ void omkrishna(int precision) {
 }
 
 void solve() {
-    int n, m;
-    cin >> n >> m;
-    string x, s;
-    cin >> x >> s;
-    int count = 0;
- 
-    for (int i = 0; i <= 5; i++) {
-        if (x.find(s) != string::npos) {
-            cout << count << endl;
-            return;
-        }
-        x.append(x);
-        count++;
+    int n;
+    cin >> n;
 
+    vector<int> arr(n);
+    cin >> arr[0];
+    int sum = arr[0];
+
+    for (int i = 1; i < n; ++i) {
+        cin >> arr[i];
+        sum += arr[i];
     }
 
-    cout << -1 << endl;
+    double sqrt_value = sqrt(sum);
+
+    if (sqrt_value == (int)sqrt_value) {
+        yes;
+    } else {
+        no;
+    }
 }
 
-
-
-int32_t main(){
-
+int32_t main() {
     omkrishna(10);
     
     int T = 1;

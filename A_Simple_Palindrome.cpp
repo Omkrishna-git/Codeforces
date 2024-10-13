@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 #define int long long
@@ -19,27 +19,26 @@ void omkrishna(int precision) {
     cout.precision(precision);
 }
 
-void solve() {
-    int n, m;
-    cin >> n >> m;
-    string x, s;
-    cin >> x >> s;
-    int count = 0;
+void solve(){
  
-    for (int i = 0; i <= 5; i++) {
-        if (x.find(s) != string::npos) {
-            cout << count << endl;
-            return;
-        }
-        x.append(x);
-        count++;
-
+    int n;
+    cin >> n;
+ 
+    int c = n/5;
+    int r = n % 5;
+ 
+    string a = "aeiou";
+ 
+    for (int i = 0; i < 5; i++){
+        int cc = c;
+        if(i < r) cc++;
+        
+        for (int j = 0; j < cc; j++) cout << a[i];
+        
     }
-
-    cout << -1 << endl;
+    
+    cout << "\n";
 }
-
-
 
 int32_t main(){
 
